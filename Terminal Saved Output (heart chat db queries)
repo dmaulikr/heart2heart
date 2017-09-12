@@ -1,0 +1,1176 @@
+Last login: Sat Jul 22 23:20:10 on ttys000
+Tegas-iMac:~ tegaesabunor$ ls
+AnacondaProjects	Downloads		Public
+AndroidStudioProjects	Library			VirtualBox VMs
+Applications		Movies			anaconda
+Desktop			Music			eclipse
+DjangoProject		Pictures		get-pip.py
+Documents		Projects
+Tegas-iMac:~ tegaesabunor$ cd Documents
+Tegas-iMac:Documents tegaesabunor$ ls
+A Project Guide to UX Design.pdf	androidstudioworkspace
+DjangoProjects				workspace
+Msoffice				workspacepy
+Music					xcodeprojects
+Programming pdf
+Tegas-iMac:Documents tegaesabunor$ cd DjangoProjects/
+Tegas-iMac:DjangoProjects tegaesabunor$ ls
+Work_manager	ls		portofolio
+aussietimes	mysite		realestate
+Tegas-iMac:DjangoProjects tegaesabunor$ cd realestate
+Tegas-iMac:realestate tegaesabunor$ ls
+agents		manage.py	properties	static		users
+db.sqlite3	media		realestate	templates
+Tegas-iMac:realestate tegaesabunor$ python cd .
+python: can't open file 'cd': [Errno 2] No such file or directory
+Tegas-iMac:realestate tegaesabunor$ python cd ..
+python: can't open file 'cd': [Errno 2] No such file or directory
+Tegas-iMac:realestate tegaesabunor$ cd ../
+Tegas-iMac:DjangoProjects tegaesabunor$ ls
+Work_manager	ls		portofolio
+aussietimes	mysite		realestate
+Tegas-iMac:DjangoProjects tegaesabunor$ cd ls
+Tegas-iMac:ls tegaesabunor$ ls
+README.md	h2hmainsite	manage.py	static
+db.sqlite3	heart2heart	media		templates
+Tegas-iMac:ls tegaesabunor$ python manage.py startapp heartusers
+Traceback (most recent call last):
+  File "manage.py", line 22, in <module>
+    execute_from_command_line(sys.argv)
+  File "/Users/tegaesabunor/anaconda/lib/python3.6/site-packages/django/core/management/__init__.py", line 363, in execute_from_command_line
+    utility.execute()
+  File "/Users/tegaesabunor/anaconda/lib/python3.6/site-packages/django/core/management/__init__.py", line 337, in execute
+    django.setup()
+  File "/Users/tegaesabunor/anaconda/lib/python3.6/site-packages/django/__init__.py", line 27, in setup
+    apps.populate(settings.INSTALLED_APPS)
+  File "/Users/tegaesabunor/anaconda/lib/python3.6/site-packages/django/apps/registry.py", line 85, in populate
+    app_config = AppConfig.create(entry)
+  File "/Users/tegaesabunor/anaconda/lib/python3.6/site-packages/django/apps/config.py", line 127, in create
+    import_module(entry)
+  File "/Users/tegaesabunor/anaconda/lib/python3.6/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 978, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 961, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 945, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'h2hmainsite.apps.H2HmainsitesConfig'; 'h2hmainsite.apps' is not a package
+Tegas-iMac:ls tegaesabunor$ python manage.py startapp heartuser
+Traceback (most recent call last):
+  File "manage.py", line 22, in <module>
+    execute_from_command_line(sys.argv)
+  File "/Users/tegaesabunor/anaconda/lib/python3.6/site-packages/django/core/management/__init__.py", line 363, in execute_from_command_line
+    utility.execute()
+  File "/Users/tegaesabunor/anaconda/lib/python3.6/site-packages/django/core/management/__init__.py", line 337, in execute
+    django.setup()
+  File "/Users/tegaesabunor/anaconda/lib/python3.6/site-packages/django/__init__.py", line 27, in setup
+    apps.populate(settings.INSTALLED_APPS)
+  File "/Users/tegaesabunor/anaconda/lib/python3.6/site-packages/django/apps/registry.py", line 85, in populate
+    app_config = AppConfig.create(entry)
+  File "/Users/tegaesabunor/anaconda/lib/python3.6/site-packages/django/apps/config.py", line 127, in create
+    import_module(entry)
+  File "/Users/tegaesabunor/anaconda/lib/python3.6/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 978, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 961, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 945, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'h2hmainsite.apps.H2HmainsitesConfig'; 'h2hmainsite.apps' is not a package
+Tegas-iMac:ls tegaesabunor$ python manage.py startapp heartuser
+Tegas-iMac:ls tegaesabunor$ python manage.py startapp userchats
+Tegas-iMac:ls tegaesabunor$ python manage.py check
+Traceback (most recent call last):
+  File "manage.py", line 22, in <module>
+    execute_from_command_line(sys.argv)
+  File "/Users/tegaesabunor/anaconda/lib/python3.6/site-packages/django/core/management/__init__.py", line 363, in execute_from_command_line
+    utility.execute()
+  File "/Users/tegaesabunor/anaconda/lib/python3.6/site-packages/django/core/management/__init__.py", line 355, in execute
+    self.fetch_command(subcommand).run_from_argv(self.argv)
+  File "/Users/tegaesabunor/anaconda/lib/python3.6/site-packages/django/core/management/base.py", line 283, in run_from_argv
+    self.execute(*args, **cmd_options)
+  File "/Users/tegaesabunor/anaconda/lib/python3.6/site-packages/django/core/management/base.py", line 330, in execute
+    output = self.handle(*args, **options)
+  File "/Users/tegaesabunor/anaconda/lib/python3.6/site-packages/django/core/management/commands/check.py", line 68, in handle
+    fail_level=getattr(checks, options['fail_level']),
+  File "/Users/tegaesabunor/anaconda/lib/python3.6/site-packages/django/core/management/base.py", line 359, in check
+    include_deployment_checks=include_deployment_checks,
+  File "/Users/tegaesabunor/anaconda/lib/python3.6/site-packages/django/core/management/base.py", line 346, in _run_checks
+    return checks.run_checks(**kwargs)
+  File "/Users/tegaesabunor/anaconda/lib/python3.6/site-packages/django/core/checks/registry.py", line 81, in run_checks
+    new_errors = check(app_configs=app_configs)
+  File "/Users/tegaesabunor/anaconda/lib/python3.6/site-packages/django/core/checks/urls.py", line 16, in check_url_config
+    return check_resolver(resolver)
+  File "/Users/tegaesabunor/anaconda/lib/python3.6/site-packages/django/core/checks/urls.py", line 26, in check_resolver
+    return check_method()
+  File "/Users/tegaesabunor/anaconda/lib/python3.6/site-packages/django/urls/resolvers.py", line 254, in check
+    for pattern in self.url_patterns:
+  File "/Users/tegaesabunor/anaconda/lib/python3.6/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/Users/tegaesabunor/anaconda/lib/python3.6/site-packages/django/urls/resolvers.py", line 405, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/Users/tegaesabunor/anaconda/lib/python3.6/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/Users/tegaesabunor/anaconda/lib/python3.6/site-packages/django/urls/resolvers.py", line 398, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/Users/tegaesabunor/anaconda/lib/python3.6/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 978, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 961, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 950, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 655, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 205, in _call_with_frames_removed
+  File "/Users/tegaesabunor/Documents/DjangoProjects/ls/heart2heart/urls.py", line 23, in <module>
+    url(r'^', include('h2hmainsite.urls'))
+  File "/Users/tegaesabunor/anaconda/lib/python3.6/site-packages/django/conf/urls/__init__.py", line 50, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/Users/tegaesabunor/anaconda/lib/python3.6/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 978, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 961, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 950, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 655, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 674, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 781, in get_code
+  File "<frozen importlib._bootstrap_external>", line 741, in source_to_code
+  File "<frozen importlib._bootstrap>", line 205, in _call_with_frames_removed
+  File "/Users/tegaesabunor/Documents/DjangoProjects/ls/h2hmainsite/urls.py", line 9
+    url(r'^$', auth_views.login, {'authentication_form':MyAuthenicationForm, 'extra_context':extra_context} name='login'),
+                                                                                                               ^
+SyntaxError: invalid syntax
+Tegas-iMac:ls tegaesabunor$ python manage.py check
+Traceback (most recent call last):
+  File "manage.py", line 22, in <module>
+    execute_from_command_line(sys.argv)
+  File "/Users/tegaesabunor/anaconda/lib/python3.6/site-packages/django/core/management/__init__.py", line 363, in execute_from_command_line
+    utility.execute()
+  File "/Users/tegaesabunor/anaconda/lib/python3.6/site-packages/django/core/management/__init__.py", line 355, in execute
+    self.fetch_command(subcommand).run_from_argv(self.argv)
+  File "/Users/tegaesabunor/anaconda/lib/python3.6/site-packages/django/core/management/base.py", line 283, in run_from_argv
+    self.execute(*args, **cmd_options)
+  File "/Users/tegaesabunor/anaconda/lib/python3.6/site-packages/django/core/management/base.py", line 330, in execute
+    output = self.handle(*args, **options)
+  File "/Users/tegaesabunor/anaconda/lib/python3.6/site-packages/django/core/management/commands/check.py", line 68, in handle
+    fail_level=getattr(checks, options['fail_level']),
+  File "/Users/tegaesabunor/anaconda/lib/python3.6/site-packages/django/core/management/base.py", line 359, in check
+    include_deployment_checks=include_deployment_checks,
+  File "/Users/tegaesabunor/anaconda/lib/python3.6/site-packages/django/core/management/base.py", line 346, in _run_checks
+    return checks.run_checks(**kwargs)
+  File "/Users/tegaesabunor/anaconda/lib/python3.6/site-packages/django/core/checks/registry.py", line 81, in run_checks
+    new_errors = check(app_configs=app_configs)
+  File "/Users/tegaesabunor/anaconda/lib/python3.6/site-packages/django/core/checks/urls.py", line 16, in check_url_config
+    return check_resolver(resolver)
+  File "/Users/tegaesabunor/anaconda/lib/python3.6/site-packages/django/core/checks/urls.py", line 26, in check_resolver
+    return check_method()
+  File "/Users/tegaesabunor/anaconda/lib/python3.6/site-packages/django/urls/resolvers.py", line 254, in check
+    for pattern in self.url_patterns:
+  File "/Users/tegaesabunor/anaconda/lib/python3.6/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/Users/tegaesabunor/anaconda/lib/python3.6/site-packages/django/urls/resolvers.py", line 405, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/Users/tegaesabunor/anaconda/lib/python3.6/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/Users/tegaesabunor/anaconda/lib/python3.6/site-packages/django/urls/resolvers.py", line 398, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/Users/tegaesabunor/anaconda/lib/python3.6/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 978, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 961, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 950, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 655, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 205, in _call_with_frames_removed
+  File "/Users/tegaesabunor/Documents/DjangoProjects/ls/heart2heart/urls.py", line 23, in <module>
+    url(r'^', include('h2hmainsite.urls'))
+  File "/Users/tegaesabunor/anaconda/lib/python3.6/site-packages/django/conf/urls/__init__.py", line 50, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/Users/tegaesabunor/anaconda/lib/python3.6/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 978, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 961, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 950, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 655, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 674, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 781, in get_code
+  File "<frozen importlib._bootstrap_external>", line 741, in source_to_code
+  File "<frozen importlib._bootstrap>", line 205, in _call_with_frames_removed
+  File "/Users/tegaesabunor/Documents/DjangoProjects/ls/h2hmainsite/urls.py", line 11
+    url(r'^accounts/profile/$', views.dashboard_view, name='dashboard' ),
+      ^
+SyntaxError: invalid syntax
+Tegas-iMac:ls tegaesabunor$ python manage.py check
+Traceback (most recent call last):
+  File "manage.py", line 22, in <module>
+    execute_from_command_line(sys.argv)
+  File "/Users/tegaesabunor/anaconda/lib/python3.6/site-packages/django/core/management/__init__.py", line 363, in execute_from_command_line
+    utility.execute()
+  File "/Users/tegaesabunor/anaconda/lib/python3.6/site-packages/django/core/management/__init__.py", line 355, in execute
+    self.fetch_command(subcommand).run_from_argv(self.argv)
+  File "/Users/tegaesabunor/anaconda/lib/python3.6/site-packages/django/core/management/base.py", line 283, in run_from_argv
+    self.execute(*args, **cmd_options)
+  File "/Users/tegaesabunor/anaconda/lib/python3.6/site-packages/django/core/management/base.py", line 330, in execute
+    output = self.handle(*args, **options)
+  File "/Users/tegaesabunor/anaconda/lib/python3.6/site-packages/django/core/management/commands/check.py", line 68, in handle
+    fail_level=getattr(checks, options['fail_level']),
+  File "/Users/tegaesabunor/anaconda/lib/python3.6/site-packages/django/core/management/base.py", line 359, in check
+    include_deployment_checks=include_deployment_checks,
+  File "/Users/tegaesabunor/anaconda/lib/python3.6/site-packages/django/core/management/base.py", line 346, in _run_checks
+    return checks.run_checks(**kwargs)
+  File "/Users/tegaesabunor/anaconda/lib/python3.6/site-packages/django/core/checks/registry.py", line 81, in run_checks
+    new_errors = check(app_configs=app_configs)
+  File "/Users/tegaesabunor/anaconda/lib/python3.6/site-packages/django/core/checks/urls.py", line 16, in check_url_config
+    return check_resolver(resolver)
+  File "/Users/tegaesabunor/anaconda/lib/python3.6/site-packages/django/core/checks/urls.py", line 26, in check_resolver
+    return check_method()
+  File "/Users/tegaesabunor/anaconda/lib/python3.6/site-packages/django/urls/resolvers.py", line 254, in check
+    for pattern in self.url_patterns:
+  File "/Users/tegaesabunor/anaconda/lib/python3.6/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/Users/tegaesabunor/anaconda/lib/python3.6/site-packages/django/urls/resolvers.py", line 405, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/Users/tegaesabunor/anaconda/lib/python3.6/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/Users/tegaesabunor/anaconda/lib/python3.6/site-packages/django/urls/resolvers.py", line 398, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/Users/tegaesabunor/anaconda/lib/python3.6/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 978, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 961, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 950, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 655, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 205, in _call_with_frames_removed
+  File "/Users/tegaesabunor/Documents/DjangoProjects/ls/heart2heart/urls.py", line 23, in <module>
+    url(r'^', include('h2hmainsite.urls'))
+  File "/Users/tegaesabunor/anaconda/lib/python3.6/site-packages/django/conf/urls/__init__.py", line 50, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/Users/tegaesabunor/anaconda/lib/python3.6/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 978, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 961, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 950, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 655, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 674, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 781, in get_code
+  File "<frozen importlib._bootstrap_external>", line 741, in source_to_code
+  File "<frozen importlib._bootstrap>", line 205, in _call_with_frames_removed
+  File "/Users/tegaesabunor/Documents/DjangoProjects/ls/h2hmainsite/urls.py", line 15
+    url(r'inbox/$', views.inbox, name='inbox')
+      ^
+SyntaxError: invalid syntax
+Tegas-iMac:ls tegaesabunor$ python manage.py check
+Traceback (most recent call last):
+  File "manage.py", line 22, in <module>
+    execute_from_command_line(sys.argv)
+  File "/Users/tegaesabunor/anaconda/lib/python3.6/site-packages/django/core/management/__init__.py", line 363, in execute_from_command_line
+    utility.execute()
+  File "/Users/tegaesabunor/anaconda/lib/python3.6/site-packages/django/core/management/__init__.py", line 355, in execute
+    self.fetch_command(subcommand).run_from_argv(self.argv)
+  File "/Users/tegaesabunor/anaconda/lib/python3.6/site-packages/django/core/management/base.py", line 283, in run_from_argv
+    self.execute(*args, **cmd_options)
+  File "/Users/tegaesabunor/anaconda/lib/python3.6/site-packages/django/core/management/base.py", line 330, in execute
+    output = self.handle(*args, **options)
+  File "/Users/tegaesabunor/anaconda/lib/python3.6/site-packages/django/core/management/commands/check.py", line 68, in handle
+    fail_level=getattr(checks, options['fail_level']),
+  File "/Users/tegaesabunor/anaconda/lib/python3.6/site-packages/django/core/management/base.py", line 359, in check
+    include_deployment_checks=include_deployment_checks,
+  File "/Users/tegaesabunor/anaconda/lib/python3.6/site-packages/django/core/management/base.py", line 346, in _run_checks
+    return checks.run_checks(**kwargs)
+  File "/Users/tegaesabunor/anaconda/lib/python3.6/site-packages/django/core/checks/registry.py", line 81, in run_checks
+    new_errors = check(app_configs=app_configs)
+  File "/Users/tegaesabunor/anaconda/lib/python3.6/site-packages/django/core/checks/urls.py", line 16, in check_url_config
+    return check_resolver(resolver)
+  File "/Users/tegaesabunor/anaconda/lib/python3.6/site-packages/django/core/checks/urls.py", line 26, in check_resolver
+    return check_method()
+  File "/Users/tegaesabunor/anaconda/lib/python3.6/site-packages/django/urls/resolvers.py", line 254, in check
+    for pattern in self.url_patterns:
+  File "/Users/tegaesabunor/anaconda/lib/python3.6/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/Users/tegaesabunor/anaconda/lib/python3.6/site-packages/django/urls/resolvers.py", line 405, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/Users/tegaesabunor/anaconda/lib/python3.6/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/Users/tegaesabunor/anaconda/lib/python3.6/site-packages/django/urls/resolvers.py", line 398, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/Users/tegaesabunor/anaconda/lib/python3.6/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 978, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 961, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 950, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 655, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 205, in _call_with_frames_removed
+  File "/Users/tegaesabunor/Documents/DjangoProjects/ls/heart2heart/urls.py", line 23, in <module>
+    url(r'^', include('h2hmainsite.urls'))
+  File "/Users/tegaesabunor/anaconda/lib/python3.6/site-packages/django/conf/urls/__init__.py", line 50, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/Users/tegaesabunor/anaconda/lib/python3.6/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 978, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 961, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 950, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 655, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 205, in _call_with_frames_removed
+  File "/Users/tegaesabunor/Documents/DjangoProjects/ls/h2hmainsite/urls.py", line 2, in <module>
+    import h2hmainsite.views as views
+  File "/Users/tegaesabunor/Documents/DjangoProjects/ls/h2hmainsite/views.py", line 3, in <module>
+    from userchats.models import Chat, ChatLine
+  File "/Users/tegaesabunor/Documents/DjangoProjects/ls/userchats/models.py", line 4, in <module>
+    class Chat(models.Model):
+  File "/Users/tegaesabunor/anaconda/lib/python3.6/site-packages/django/db/models/base.py", line 118, in __new__
+    "INSTALLED_APPS." % (module, name)
+RuntimeError: Model class userchats.models.Chat doesn't declare an explicit app_label and isn't in an application in INSTALLED_APPS.
+Tegas-iMac:ls tegaesabunor$ python manage.py check
+SystemCheckError: System check identified some issues:
+
+ERRORS:
+heartuser.Profile.ethnicity: (fields.E120) CharFields must define a 'max_length' attribute.
+heartuser.Profile.kids: (fields.E120) CharFields must define a 'max_length' attribute.
+heartuser.Profile.location: (fields.E120) CharFields must define a 'max_length' attribute.
+heartuser.Profile.pets: (fields.E120) CharFields must define a 'max_length' attribute.
+heartuser.Profile.religion: (fields.E120) CharFields must define a 'max_length' attribute.
+
+System check identified 5 issues (0 silenced).
+Tegas-iMac:ls tegaesabunor$ python manage.py check
+System check identified no issues (0 silenced).
+Tegas-iMac:ls tegaesabunor$ python manage.py makemigrations
+pMigrations for 'heartuser':
+  heartuser/migrations/0001_initial.py
+    - Create model HeartUser
+    - Create model Profile
+    - Add field profile to heartuser
+Migrations for 'userchats':
+  userchats/migrations/0001_initial.py
+    - Create model Chat
+    - Create model ChatLine
+Tegas-iMac:ls tegaesabunor$ python manage.py migrate
+Operations to perform:
+  Apply all migrations: admin, auth, contenttypes, heartuser, sessions, userchats
+Running migrations:
+  Applying contenttypes.0001_initial... OK
+  Applying auth.0001_initial... OK
+  Applying admin.0001_initial... OK
+  Applying admin.0002_logentry_remove_auto_add... OK
+  Applying contenttypes.0002_remove_content_type_name... OK
+  Applying auth.0002_alter_permission_name_max_length... OK
+  Applying auth.0003_alter_user_email_max_length... OK
+  Applying auth.0004_alter_user_username_opts... OK
+  Applying auth.0005_alter_user_last_login_null... OK
+  Applying auth.0006_require_contenttypes_0002... OK
+  Applying auth.0007_alter_validators_add_error_messages... OK
+  Applying auth.0008_alter_user_username_max_length... OK
+  Applying heartuser.0001_initial... OK
+  Applying sessions.0001_initial... OK
+  Applying userchats.0001_initial... OK
+Tegas-iMac:ls tegaesabunor$ python manage.py check
+SystemCheckError: System check identified some issues:
+
+ERRORS:
+<class 'userchats.admin.ChatAdmin'>: (admin.E107) The value of 'list_display' must be a list or tuple.
+
+System check identified 1 issue (0 silenced).
+Tegas-iMac:ls tegaesabunor$ python manage.py check
+System check identified no issues (0 silenced).
+Tegas-iMac:ls tegaesabunor$ python manage.py makemigrations
+No changes detected
+Tegas-iMac:ls tegaesabunor$ python manage.py runserver 193.168.20.6:9000
+Performing system checks...
+
+System check identified no issues (0 silenced).
+July 25, 2017 - 19:59:27
+Django version 1.11.2, using settings 'heart2heart.settings'
+Starting development server at http://193.168.20.6:9000/
+Quit the server with CONTROL-C.
+Error: That IP address can't be assigned to.
+Tegas-iMac:ls tegaesabunor$ python manage.py runserver 193.168.20.6:8001
+Performing system checks...
+
+System check identified no issues (0 silenced).
+July 25, 2017 - 19:59:39
+Django version 1.11.2, using settings 'heart2heart.settings'
+Starting development server at http://193.168.20.6:8001/
+Quit the server with CONTROL-C.
+Error: That IP address can't be assigned to.
+Tegas-iMac:ls tegaesabunor$ python manage.py runserver 193.168.20.6:8080
+Performing system checks...
+
+System check identified no issues (0 silenced).
+July 25, 2017 - 19:59:47
+Django version 1.11.2, using settings 'heart2heart.settings'
+Starting development server at http://193.168.20.6:8080/
+Quit the server with CONTROL-C.
+Error: That IP address can't be assigned to.
+Tegas-iMac:ls tegaesabunor$ python manage.py runserver 193.168.20.6:6666
+Performing system checks...
+
+System check identified no issues (0 silenced).
+July 25, 2017 - 19:59:59
+Django version 1.11.2, using settings 'heart2heart.settings'
+Starting development server at http://193.168.20.6:6666/
+Quit the server with CONTROL-C.
+Error: That IP address can't be assigned to.
+Tegas-iMac:ls tegaesabunor$ python manage.py runserver 193.168.20.6:4444
+
+Performing system checks...
+
+System check identified no issues (0 silenced).
+July 25, 2017 - 20:00:16
+Django version 1.11.2, using settings 'heart2heart.settings'
+Starting development server at http://193.168.20.6:4444/
+Quit the server with CONTROL-C.
+Error: That IP address can't be assigned to.
+Tegas-iMac:ls tegaesabunor$ 
+Tegas-iMac:ls tegaesabunor$ python manage.py runserver 193.168.20.6:8000
+Performing system checks...
+
+System check identified no issues (0 silenced).
+July 25, 2017 - 20:00:27
+Django version 1.11.2, using settings 'heart2heart.settings'
+Starting development server at http://193.168.20.6:8000/
+Quit the server with CONTROL-C.
+Error: That IP address can't be assigned to.
+Tegas-iMac:ls tegaesabunor$ python manage.py runserver 192.168.20.6:9000
+Performing system checks...
+
+System check identified no issues (0 silenced).
+July 25, 2017 - 20:00:49
+Django version 1.11.2, using settings 'heart2heart.settings'
+Starting development server at http://192.168.20.6:9000/
+Quit the server with CONTROL-C.
+Invalid HTTP_HOST header: '192.168.20.6:9000'. You may need to add '192.168.20.6' to ALLOWED_HOSTS.
+[25/Jul/2017 20:01:10] "GET / HTTP/1.1" 400 59978
+Invalid HTTP_HOST header: '192.168.20.6:9000'. You may need to add '192.168.20.6' to ALLOWED_HOSTS.
+[25/Jul/2017 20:01:10] "GET /favicon.ico HTTP/1.1" 400 60045
+Performing system checks...
+
+System check identified no issues (0 silenced).
+July 25, 2017 - 20:01:49
+Django version 1.11.2, using settings 'heart2heart.settings'
+Starting development server at http://192.168.20.6:9000/
+Quit the server with CONTROL-C.
+[25/Jul/2017 20:01:57] "GET / HTTP/1.1" 200 1323
+[25/Jul/2017 20:01:57] "GET /static/default.css HTTP/1.1" 200 1635
+[25/Jul/2017 20:01:57] "GET /static/css/bootstrap.css HTTP/1.1" 200 146027
+[25/Jul/2017 20:02:05] "GET / HTTP/1.1" 200 1323
+[25/Jul/2017 20:02:09] "GET /admin HTTP/1.1" 301 0
+[25/Jul/2017 20:02:09] "GET /admin/ HTTP/1.1" 302 0
+[25/Jul/2017 20:02:09] "GET /admin/login/?next=/admin/ HTTP/1.1" 200 1650
+[25/Jul/2017 20:02:09] "GET /static/admin/css/login.css HTTP/1.1" 200 1203
+[25/Jul/2017 20:02:09] "GET /static/admin/css/base.css HTTP/1.1" 200 16066
+[25/Jul/2017 20:02:09] "GET /static/admin/css/fonts.css HTTP/1.1" 200 423
+[25/Jul/2017 20:02:09] "GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 200 81348
+[25/Jul/2017 20:02:09] "GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 200 80304
+^CTegas-iMac:ls tegaesabunor$ python manage.py createsuperuser
+Username (leave blank to use 'tegaesabunor'): 
+Email address: tesabunor@gmail.com
+Password: 
+Password (again): 
+Error: Your passwords didn't match.
+Password: 
+Password (again): 
+Superuser created successfully.
+Tegas-iMac:ls tegaesabunor$ python manage.py runserver 192.168.20.6:9000
+Performing system checks...
+
+System check identified no issues (0 silenced).
+July 25, 2017 - 20:05:25
+Django version 1.11.2, using settings 'heart2heart.settings'
+Starting development server at http://192.168.20.6:9000/
+Quit the server with CONTROL-C.
+[25/Jul/2017 20:05:32] "GET /admin/login/?next=/admin/ HTTP/1.1" 200 1650
+[25/Jul/2017 20:05:35] "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+[25/Jul/2017 20:05:35] "GET /admin/ HTTP/1.1" 200 4948
+[25/Jul/2017 20:05:35] "GET /static/admin/css/dashboard.css HTTP/1.1" 200 412
+[25/Jul/2017 20:05:35] "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+[25/Jul/2017 20:05:35] "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 380
+[25/Jul/2017 20:05:35] "GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 200 82564
+[25/Jul/2017 20:05:43] "GET /admin/heartuser/heartuser/ HTTP/1.1" 200 3085
+[25/Jul/2017 20:05:43] "GET /static/admin/css/changelists.css HTTP/1.1" 200 6170
+[25/Jul/2017 20:05:43] "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 6591
+[25/Jul/2017 20:05:43] "GET /admin/jsi18n/ HTTP/1.1" 200 3189
+[25/Jul/2017 20:05:43] "GET /static/admin/js/prepopulate.js HTTP/1.1" 200 1538
+[25/Jul/2017 20:05:43] "GET /static/admin/js/actions.js HTTP/1.1" 200 6501
+[25/Jul/2017 20:05:43] "GET /static/admin/js/jquery.init.js HTTP/1.1" 200 363
+[25/Jul/2017 20:05:43] "GET /static/admin/js/core.js HTTP/1.1" 200 7976
+[25/Jul/2017 20:05:43] "GET /static/admin/js/urlify.js HTTP/1.1" 200 8186
+[25/Jul/2017 20:05:43] "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 128820
+[25/Jul/2017 20:05:43] "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 258648
+[25/Jul/2017 20:05:43] "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 200 331
+[25/Jul/2017 20:05:46] "GET /admin/heartuser/heartuser/add/ HTTP/1.1" 200 5623
+[25/Jul/2017 20:05:46] "GET /admin/jsi18n/ HTTP/1.1" 200 3189
+[25/Jul/2017 20:05:46] "GET /static/admin/css/forms.css HTTP/1.1" 200 8173
+[25/Jul/2017 20:05:46] "GET /static/admin/css/widgets.css HTTP/1.1" 200 10340
+[25/Jul/2017 20:05:46] "GET /static/admin/js/change_form.js HTTP/1.1" 200 712
+[25/Jul/2017 20:05:46] "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 200 495
+[25/Jul/2017 20:05:51] "GET /admin/heartuser/profile/add/?_to_field=id&_popup=1 HTTP/1.1" 200 6645
+[25/Jul/2017 20:05:51] "GET /admin/jsi18n/ HTTP/1.1" 200 3189
+Internal Server Error: /admin/heartuser/profile/add/
+Traceback (most recent call last):
+  File "/Users/tegaesabunor/anaconda/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/Users/tegaesabunor/anaconda/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/tegaesabunor/anaconda/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/tegaesabunor/anaconda/lib/python3.6/site-packages/django/contrib/admin/options.py", line 551, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/Users/tegaesabunor/anaconda/lib/python3.6/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/Users/tegaesabunor/anaconda/lib/python3.6/site-packages/django/views/decorators/cache.py", line 57, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/Users/tegaesabunor/anaconda/lib/python3.6/site-packages/django/contrib/admin/sites.py", line 224, in inner
+    return view(request, *args, **kwargs)
+  File "/Users/tegaesabunor/anaconda/lib/python3.6/site-packages/django/contrib/admin/options.py", line 1508, in add_view
+    return self.changeform_view(request, None, form_url, extra_context)
+  File "/Users/tegaesabunor/anaconda/lib/python3.6/site-packages/django/utils/decorators.py", line 67, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "/Users/tegaesabunor/anaconda/lib/python3.6/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/Users/tegaesabunor/anaconda/lib/python3.6/site-packages/django/utils/decorators.py", line 63, in bound_func
+    return func.__get__(self, type(self))(*args2, **kwargs2)
+  File "/Users/tegaesabunor/anaconda/lib/python3.6/site-packages/django/contrib/admin/options.py", line 1408, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "/Users/tegaesabunor/anaconda/lib/python3.6/site-packages/django/contrib/admin/options.py", line 1452, in _changeform_view
+    self.log_addition(request, new_object, change_message)
+  File "/Users/tegaesabunor/anaconda/lib/python3.6/site-packages/django/contrib/admin/options.py", line 724, in log_addition
+    object_repr=force_text(object),
+  File "/Users/tegaesabunor/anaconda/lib/python3.6/site-packages/django/utils/encoding.py", line 76, in force_text
+    s = six.text_type(s)
+TypeError: __str__ returned non-string (type int)
+[25/Jul/2017 20:06:53] "POST /admin/heartuser/profile/add/?_to_field=id&_popup=1 HTTP/1.1" 500 117709
+Performing system checks...
+
+System check identified no issues (0 silenced).
+July 25, 2017 - 20:07:46
+Django version 1.11.2, using settings 'heart2heart.settings'
+Starting development server at http://192.168.20.6:9000/
+Quit the server with CONTROL-C.
+[25/Jul/2017 20:07:54] "GET /admin/auth/user/add/?_to_field=id&_popup=1 HTTP/1.1" 200 4478
+[25/Jul/2017 20:07:54] "GET /admin/jsi18n/ HTTP/1.1" 200 3189
+[25/Jul/2017 20:14:51] "GET /admin/auth/user/add/?_to_field=id&_popup=1 HTTP/1.1" 200 4478
+[25/Jul/2017 20:14:51] "GET /admin/jsi18n/ HTTP/1.1" 200 3189
+[25/Jul/2017 20:15:00] "GET /admin/heartuser/profile/add/?_to_field=id&_popup=1 HTTP/1.1" 200 6645
+[25/Jul/2017 20:15:00] "GET /admin/jsi18n/ HTTP/1.1" 200 3189
+[25/Jul/2017 20:15:50] "POST /admin/heartuser/profile/add/?_to_field=id&_popup=1 HTTP/1.1" 200 357
+[25/Jul/2017 20:15:50] "GET /static/admin/js/popup_response.js HTTP/1.1" 200 569
+Internal Server Error: /admin/heartuser/heartuser/add/
+Traceback (most recent call last):
+  File "/Users/tegaesabunor/anaconda/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/Users/tegaesabunor/anaconda/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/tegaesabunor/anaconda/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/tegaesabunor/anaconda/lib/python3.6/site-packages/django/contrib/admin/options.py", line 551, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/Users/tegaesabunor/anaconda/lib/python3.6/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/Users/tegaesabunor/anaconda/lib/python3.6/site-packages/django/views/decorators/cache.py", line 57, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/Users/tegaesabunor/anaconda/lib/python3.6/site-packages/django/contrib/admin/sites.py", line 224, in inner
+    return view(request, *args, **kwargs)
+  File "/Users/tegaesabunor/anaconda/lib/python3.6/site-packages/django/contrib/admin/options.py", line 1508, in add_view
+    return self.changeform_view(request, None, form_url, extra_context)
+  File "/Users/tegaesabunor/anaconda/lib/python3.6/site-packages/django/utils/decorators.py", line 67, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "/Users/tegaesabunor/anaconda/lib/python3.6/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/Users/tegaesabunor/anaconda/lib/python3.6/site-packages/django/utils/decorators.py", line 63, in bound_func
+    return func.__get__(self, type(self))(*args2, **kwargs2)
+  File "/Users/tegaesabunor/anaconda/lib/python3.6/site-packages/django/contrib/admin/options.py", line 1408, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "/Users/tegaesabunor/anaconda/lib/python3.6/site-packages/django/contrib/admin/options.py", line 1452, in _changeform_view
+    self.log_addition(request, new_object, change_message)
+  File "/Users/tegaesabunor/anaconda/lib/python3.6/site-packages/django/contrib/admin/options.py", line 724, in log_addition
+    object_repr=force_text(object),
+  File "/Users/tegaesabunor/anaconda/lib/python3.6/site-packages/django/utils/encoding.py", line 76, in force_text
+    s = six.text_type(s)
+TypeError: __str__ returned non-string (type User)
+[25/Jul/2017 20:15:57] "POST /admin/heartuser/heartuser/add/ HTTP/1.1" 500 115763
+Performing system checks...
+
+System check identified no issues (0 silenced).
+July 25, 2017 - 20:16:37
+Django version 1.11.2, using settings 'heart2heart.settings'
+Starting development server at http://192.168.20.6:9000/
+Quit the server with CONTROL-C.
+[25/Jul/2017 20:16:42] "GET /admin/heartuser/heartuser/add/ HTTP/1.1" 200 5656
+[25/Jul/2017 20:16:42] "GET /admin/jsi18n/ HTTP/1.1" 200 3189
+[25/Jul/2017 20:16:44] "GET /admin/heartuser/heartuser/add/ HTTP/1.1" 200 5656
+[25/Jul/2017 20:16:44] "GET /admin/jsi18n/ HTTP/1.1" 200 3189
+[25/Jul/2017 20:16:52] "POST /admin/heartuser/heartuser/add/ HTTP/1.1" 302 0
+[25/Jul/2017 20:16:52] "GET /admin/heartuser/heartuser/ HTTP/1.1" 200 4660
+[25/Jul/2017 20:16:52] "GET /admin/jsi18n/ HTTP/1.1" 200 3189
+[25/Jul/2017 20:16:52] "GET /static/admin/img/icon-yes.svg HTTP/1.1" 200 436
+[25/Jul/2017 20:17:02] "GET /admin/ HTTP/1.1" 200 5568
+[25/Jul/2017 20:20:40] "GET /admin/userchats/chat/add/ HTTP/1.1" 200 3342
+[25/Jul/2017 20:20:40] "GET /admin/jsi18n/ HTTP/1.1" 200 3189
+Internal Server Error: /admin/userchats/chat/add/
+Traceback (most recent call last):
+  File "/Users/tegaesabunor/anaconda/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/Users/tegaesabunor/anaconda/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/tegaesabunor/anaconda/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/tegaesabunor/anaconda/lib/python3.6/site-packages/django/contrib/admin/options.py", line 551, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/Users/tegaesabunor/anaconda/lib/python3.6/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/Users/tegaesabunor/anaconda/lib/python3.6/site-packages/django/views/decorators/cache.py", line 57, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/Users/tegaesabunor/anaconda/lib/python3.6/site-packages/django/contrib/admin/sites.py", line 224, in inner
+    return view(request, *args, **kwargs)
+  File "/Users/tegaesabunor/anaconda/lib/python3.6/site-packages/django/contrib/admin/options.py", line 1508, in add_view
+    return self.changeform_view(request, None, form_url, extra_context)
+  File "/Users/tegaesabunor/anaconda/lib/python3.6/site-packages/django/utils/decorators.py", line 67, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "/Users/tegaesabunor/anaconda/lib/python3.6/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/Users/tegaesabunor/anaconda/lib/python3.6/site-packages/django/utils/decorators.py", line 63, in bound_func
+    return func.__get__(self, type(self))(*args2, **kwargs2)
+  File "/Users/tegaesabunor/anaconda/lib/python3.6/site-packages/django/contrib/admin/options.py", line 1408, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "/Users/tegaesabunor/anaconda/lib/python3.6/site-packages/django/contrib/admin/options.py", line 1452, in _changeform_view
+    self.log_addition(request, new_object, change_message)
+  File "/Users/tegaesabunor/anaconda/lib/python3.6/site-packages/django/contrib/admin/options.py", line 724, in log_addition
+    object_repr=force_text(object),
+  File "/Users/tegaesabunor/anaconda/lib/python3.6/site-packages/django/utils/encoding.py", line 76, in force_text
+    s = six.text_type(s)
+TypeError: __str__ returned non-string (type int)
+[25/Jul/2017 20:20:48] "POST /admin/userchats/chat/add/ HTTP/1.1" 500 115300
+Performing system checks...
+
+System check identified no issues (0 silenced).
+July 25, 2017 - 20:21:16
+Django version 1.11.2, using settings 'heart2heart.settings'
+Starting development server at http://192.168.20.6:9000/
+Quit the server with CONTROL-C.
+[25/Jul/2017 20:21:21] "POST /admin/userchats/chat/add/ HTTP/1.1" 302 0
+[25/Jul/2017 20:21:22] "GET /admin/userchats/chat/ HTTP/1.1" 200 4370
+[25/Jul/2017 20:21:22] "GET /static/admin/css/base.css HTTP/1.1" 304 0
+[25/Jul/2017 20:21:22] "GET /static/admin/css/changelists.css HTTP/1.1" 304 0
+[25/Jul/2017 20:21:22] "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 304 0
+[25/Jul/2017 20:21:22] "GET /static/admin/js/core.js HTTP/1.1" 304 0
+[25/Jul/2017 20:21:22] "GET /static/admin/js/jquery.init.js HTTP/1.1" 304 0
+[25/Jul/2017 20:21:22] "GET /admin/jsi18n/ HTTP/1.1" 200 3189
+[25/Jul/2017 20:21:22] "GET /static/admin/js/actions.js HTTP/1.1" 304 0
+[25/Jul/2017 20:21:22] "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 304 0
+[25/Jul/2017 20:21:22] "GET /static/admin/css/fonts.css HTTP/1.1" 304 0
+[25/Jul/2017 20:21:22] "GET /static/admin/js/urlify.js HTTP/1.1" 304 0
+[25/Jul/2017 20:21:22] "GET /static/admin/js/prepopulate.js HTTP/1.1" 304 0
+[25/Jul/2017 20:21:22] "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 304 0
+[25/Jul/2017 20:21:22] "GET /static/admin/img/icon-yes.svg HTTP/1.1" 304 0
+[25/Jul/2017 20:21:22] "GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 304 0
+[25/Jul/2017 20:21:22] "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 304 0
+[25/Jul/2017 20:21:22] "GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 304 0
+[25/Jul/2017 20:21:22] "GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 304 0
+[25/Jul/2017 20:21:27] "GET /admin/userchats/ HTTP/1.1" 200 2658
+[25/Jul/2017 20:21:30] "GET /admin/userchats/chat/ HTTP/1.1" 200 4196
+[25/Jul/2017 20:21:30] "GET /admin/jsi18n/ HTTP/1.1" 200 3189
+[25/Jul/2017 20:21:34] "GET /admin/userchats/ HTTP/1.1" 200 2658
+[25/Jul/2017 20:21:37] "GET /admin/userchats/chat/add/ HTTP/1.1" 200 3342
+[25/Jul/2017 20:21:37] "GET /admin/jsi18n/ HTTP/1.1" 200 3189
+[25/Jul/2017 20:21:54] "GET /admin/userchats/ HTTP/1.1" 200 2658
+[25/Jul/2017 20:21:57] "GET /admin/userchats/chatline/add/ HTTP/1.1" 200 6966
+[25/Jul/2017 20:21:57] "GET /admin/jsi18n/ HTTP/1.1" 200 3189
+[25/Jul/2017 20:21:57] "GET /static/admin/js/calendar.js HTTP/1.1" 200 7790
+[25/Jul/2017 20:21:57] "GET /static/admin/js/admin/DateTimeShortcuts.js HTTP/1.1" 200 20529
+[25/Jul/2017 20:21:57] "GET /static/admin/img/icon-clock.svg HTTP/1.1" 200 677
+[25/Jul/2017 20:21:57] "GET /static/admin/img/icon-calendar.svg HTTP/1.1" 200 1086
+Performing system checks...
+
+Unhandled exception in thread started by <function check_errors.<locals>.wrapper at 0x1064000d0>
+Traceback (most recent call last):
+  File "/Users/tegaesabunor/anaconda/lib/python3.6/site-packages/django/utils/autoreload.py", line 227, in wrapper
+    fn(*args, **kwargs)
+  File "/Users/tegaesabunor/anaconda/lib/python3.6/site-packages/django/core/management/commands/runserver.py", line 125, in inner_run
+    self.check(display_num_errors=True)
+  File "/Users/tegaesabunor/anaconda/lib/python3.6/site-packages/django/core/management/base.py", line 359, in check
+    include_deployment_checks=include_deployment_checks,
+  File "/Users/tegaesabunor/anaconda/lib/python3.6/site-packages/django/core/management/base.py", line 346, in _run_checks
+    return checks.run_checks(**kwargs)
+  File "/Users/tegaesabunor/anaconda/lib/python3.6/site-packages/django/core/checks/registry.py", line 81, in run_checks
+    new_errors = check(app_configs=app_configs)
+  File "/Users/tegaesabunor/anaconda/lib/python3.6/site-packages/django/core/checks/urls.py", line 16, in check_url_config
+    return check_resolver(resolver)
+  File "/Users/tegaesabunor/anaconda/lib/python3.6/site-packages/django/core/checks/urls.py", line 26, in check_resolver
+    return check_method()
+  File "/Users/tegaesabunor/anaconda/lib/python3.6/site-packages/django/urls/resolvers.py", line 254, in check
+    for pattern in self.url_patterns:
+  File "/Users/tegaesabunor/anaconda/lib/python3.6/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/Users/tegaesabunor/anaconda/lib/python3.6/site-packages/django/urls/resolvers.py", line 405, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/Users/tegaesabunor/anaconda/lib/python3.6/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/Users/tegaesabunor/anaconda/lib/python3.6/site-packages/django/urls/resolvers.py", line 398, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/Users/tegaesabunor/anaconda/lib/python3.6/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 978, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 961, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 950, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 655, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 205, in _call_with_frames_removed
+  File "/Users/tegaesabunor/Documents/DjangoProjects/ls/heart2heart/urls.py", line 23, in <module>
+    url(r'^', include('h2hmainsite.urls'))
+  File "/Users/tegaesabunor/anaconda/lib/python3.6/site-packages/django/conf/urls/__init__.py", line 50, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/Users/tegaesabunor/anaconda/lib/python3.6/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 978, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 961, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 950, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 655, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 674, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 781, in get_code
+  File "<frozen importlib._bootstrap_external>", line 741, in source_to_code
+  File "<frozen importlib._bootstrap>", line 205, in _call_with_frames_removed
+  File "/Users/tegaesabunor/Documents/DjangoProjects/ls/h2hmainsite/urls.py", line 11
+    url(r')
+          ^
+SyntaxError: EOL while scanning string literal
+Performing system checks...
+
+Unhandled exception in thread started by <function check_errors.<locals>.wrapper at 0x1074b8048>
+Traceback (most recent call last):
+  File "/Users/tegaesabunor/anaconda/lib/python3.6/site-packages/django/utils/autoreload.py", line 227, in wrapper
+    fn(*args, **kwargs)
+  File "/Users/tegaesabunor/anaconda/lib/python3.6/site-packages/django/core/management/commands/runserver.py", line 125, in inner_run
+    self.check(display_num_errors=True)
+  File "/Users/tegaesabunor/anaconda/lib/python3.6/site-packages/django/core/management/base.py", line 405, in check
+    raise SystemCheckError(msg)
+django.core.management.base.SystemCheckError: SystemCheckError: System check identified some issues:
+
+ERRORS:
+userchats.Chat.first_heart_user: (fields.E304) Reverse accessor for 'Chat.first_heart_user' clashes with reverse accessor for 'Chat.second_heart_user'.
+	HINT: Add or change a related_name argument to the definition for 'Chat.first_heart_user' or 'Chat.second_heart_user'.
+userchats.Chat.second_heart_user: (fields.E304) Reverse accessor for 'Chat.second_heart_user' clashes with reverse accessor for 'Chat.first_heart_user'.
+	HINT: Add or change a related_name argument to the definition for 'Chat.second_heart_user' or 'Chat.first_heart_user'.
+
+System check identified 2 issues (0 silenced).
+Tegas-iMac:ls tegaesabunor$ python manage.py check
+SystemCheckError: System check identified some issues:
+
+ERRORS:
+userchats.Chat.first_heart_user: (fields.E304) Reverse accessor for 'Chat.first_heart_user' clashes with reverse accessor for 'Chat.second_heart_user'.
+	HINT: Add or change a related_name argument to the definition for 'Chat.first_heart_user' or 'Chat.second_heart_user'.
+userchats.Chat.second_heart_user: (fields.E304) Reverse accessor for 'Chat.second_heart_user' clashes with reverse accessor for 'Chat.first_heart_user'.
+	HINT: Add or change a related_name argument to the definition for 'Chat.second_heart_user' or 'Chat.first_heart_user'.
+
+System check identified 2 issues (0 silenced).
+Tegas-iMac:ls tegaesabunor$ python manage.py check
+SystemCheckError: System check identified some issues:
+
+ERRORS:
+<class 'userchats.admin.ChatAdmin'>: (admin.E109) The value of 'list_display[1]' must not be a ManyToManyField.
+
+System check identified 1 issue (0 silenced).
+Tegas-iMac:ls tegaesabunor$ python manage.py check
+System check identified no issues (0 silenced).
+Tegas-iMac:ls tegaesabunor$ python manage.py makemigrations
+You are trying to add a non-nullable field 'profile_message' to profile without a default; we can't do that (the database needs something to populate existing rows).
+Please select a fix:
+ 1) Provide a one-off default now (will be set on all existing rows with a null value for this column)
+ 2) Quit, and let me add a default in models.py
+Select an option: 1
+Please enter the default value now, as valid Python
+The datetime and django.utils.timezone modules are available, so you can do e.g. timezone.now
+Type 'exit' to exit this prompt
+>>> "i am guy looking for a girl"
+Migrations for 'heartuser':
+  heartuser/migrations/0002_auto_20170725_2037.py
+    - Add field profile_message to profile
+    - Alter field ethnicity on profile
+    - Alter field religion on profile
+Migrations for 'userchats':
+  userchats/migrations/0002_chat_users.py
+    - Add field users to chat
+Tegas-iMac:ls tegaesabunor$ python manage.py migrate
+Operations to perform:
+  Apply all migrations: admin, auth, contenttypes, heartuser, sessions, userchats
+Running migrations:
+  Applying heartuser.0002_auto_20170725_2037... OK
+  Applying userchats.0002_chat_users... OK
+Tegas-iMac:ls tegaesabunor$ python manage.py runserver 192.168.20.6:9000
+Performing system checks...
+
+System check identified no issues (0 silenced).
+July 25, 2017 - 20:38:52
+Django version 1.11.2, using settings 'heart2heart.settings'
+Starting development server at http://192.168.20.6:9000/
+Quit the server with CONTROL-C.
+[25/Jul/2017 20:38:55] "GET /admin/userchats/chatline/add/ HTTP/1.1" 200 6966
+[25/Jul/2017 20:38:56] "GET /admin/jsi18n/ HTTP/1.1" 200 3189
+[25/Jul/2017 20:39:21] "POST /admin/userchats/chatline/add/ HTTP/1.1" 302 0
+[25/Jul/2017 20:39:21] "GET /admin/userchats/chatline/ HTTP/1.1" 200 5079
+[25/Jul/2017 20:39:21] "GET /admin/jsi18n/ HTTP/1.1" 200 3189
+[25/Jul/2017 20:39:28] "GET /admin/ HTTP/1.1" 200 6149
+[25/Jul/2017 20:39:31] "GET /admin/userchats/chat/ HTTP/1.1" 200 4196
+[25/Jul/2017 20:39:31] "GET /admin/jsi18n/ HTTP/1.1" 200 3189
+[25/Jul/2017 20:39:37] "GET /admin/ HTTP/1.1" 200 6149
+[25/Jul/2017 20:39:43] "GET /admin/userchats/chat/ HTTP/1.1" 200 4196
+[25/Jul/2017 20:39:43] "GET /admin/jsi18n/ HTTP/1.1" 200 3189
+[25/Jul/2017 20:39:48] "POST /admin/userchats/chat/ HTTP/1.1" 302 0
+[25/Jul/2017 20:39:48] "GET /admin/userchats/chat/ HTTP/1.1" 200 4307
+[25/Jul/2017 20:39:48] "GET /admin/jsi18n/ HTTP/1.1" 200 3189
+[25/Jul/2017 20:39:48] "GET /static/admin/img/icon-alert.svg HTTP/1.1" 200 504
+[25/Jul/2017 20:39:59] "POST /admin/userchats/chat/ HTTP/1.1" 302 0
+[25/Jul/2017 20:39:59] "GET /admin/userchats/chat/ HTTP/1.1" 200 4307
+[25/Jul/2017 20:39:59] "GET /admin/jsi18n/ HTTP/1.1" 200 3189
+[25/Jul/2017 20:40:02] "GET /admin/userchats/chat/?o=1 HTTP/1.1" 200 4482
+[25/Jul/2017 20:40:02] "GET /admin/jsi18n/ HTTP/1.1" 200 3189
+[25/Jul/2017 20:40:02] "GET /static/admin/img/sorting-icons.svg HTTP/1.1" 200 1097
+[25/Jul/2017 20:40:07] "GET /admin/userchats/chat/?o=-1 HTTP/1.1" 200 4484
+[25/Jul/2017 20:40:07] "GET /admin/jsi18n/ HTTP/1.1" 200 3189
+[25/Jul/2017 20:40:12] "GET /admin/userchats/chat/add/?_changelist_filters=o%3D-1 HTTP/1.1" 200 4329
+[25/Jul/2017 20:40:12] "GET /admin/jsi18n/ HTTP/1.1" 200 3189
+[25/Jul/2017 20:40:17] "GET /admin/heartuser/heartuser/add/?_to_field=id&_popup=1 HTTP/1.1" 200 4677
+[25/Jul/2017 20:40:18] "GET /admin/jsi18n/ HTTP/1.1" 200 3189
+[25/Jul/2017 20:40:26] "GET /admin/auth/user/add/?_to_field=id&_popup=1 HTTP/1.1" 200 4478
+[25/Jul/2017 20:40:26] "GET /admin/jsi18n/ HTTP/1.1" 200 3189
+[25/Jul/2017 20:40:51] "POST /admin/auth/user/add/?_to_field=id&_popup=1 HTTP/1.1" 200 4733
+[25/Jul/2017 20:40:51] "GET /admin/jsi18n/ HTTP/1.1" 200 3189
+[25/Jul/2017 20:41:17] "POST /admin/auth/user/add/?_to_field=id&_popup=1 HTTP/1.1" 200 362
+[25/Jul/2017 20:41:36] "POST /admin/heartuser/heartuser/add/?_to_field=id&_popup=1 HTTP/1.1" 200 4879
+[25/Jul/2017 20:41:36] "GET /admin/jsi18n/ HTTP/1.1" 200 3189
+[25/Jul/2017 20:41:44] "GET /admin/heartuser/profile/add/?_to_field=id&_popup=1 HTTP/1.1" 200 7432
+[25/Jul/2017 20:41:44] "GET /admin/jsi18n/ HTTP/1.1" 200 3189
+[25/Jul/2017 20:42:47] "POST /admin/heartuser/profile/add/?_to_field=id&_popup=1 HTTP/1.1" 200 357
+[25/Jul/2017 20:42:50] "POST /admin/heartuser/heartuser/add/?_to_field=id&_popup=1 HTTP/1.1" 200 362
+[25/Jul/2017 20:42:55] "POST /admin/userchats/chat/add/?_changelist_filters=o%3D-1 HTTP/1.1" 302 0
+[25/Jul/2017 20:42:55] "GET /admin/userchats/chat/?o=-1 HTTP/1.1" 200 4903
+[25/Jul/2017 20:42:55] "GET /admin/jsi18n/ HTTP/1.1" 200 3189
+[25/Jul/2017 20:43:00] "GET /admin/userchats/chat/2/change/?_changelist_filters=o%3D-1 HTTP/1.1" 200 4652
+[25/Jul/2017 20:43:00] "GET /admin/jsi18n/ HTTP/1.1" 200 3189
+[25/Jul/2017 20:43:03] "POST /admin/userchats/chat/2/change/?_changelist_filters=o%3D-1 HTTP/1.1" 302 0
+[25/Jul/2017 20:43:03] "GET /admin/userchats/chat/?o=-1 HTTP/1.1" 200 4905
+[25/Jul/2017 20:43:03] "GET /admin/jsi18n/ HTTP/1.1" 200 3189
+[25/Jul/2017 20:43:06] "GET /admin/ HTTP/1.1" 200 7572
+[25/Jul/2017 20:43:09] "GET /admin/userchats/chatline/ HTTP/1.1" 200 4882
+[25/Jul/2017 20:43:09] "GET /admin/jsi18n/ HTTP/1.1" 200 3189
+[25/Jul/2017 20:43:48] "GET /admin/userchats/chatline/add/ HTTP/1.1" 200 7036
+[25/Jul/2017 20:43:48] "GET /admin/jsi18n/ HTTP/1.1" 200 3189
+[25/Jul/2017 20:44:44] "POST /admin/userchats/chatline/add/ HTTP/1.1" 302 0
+[25/Jul/2017 20:44:44] "GET /admin/userchats/chatline/ HTTP/1.1" 200 5476
+[25/Jul/2017 20:44:44] "GET /admin/jsi18n/ HTTP/1.1" 200 3189
+^CTegas-iMac:ls tegaesabunor$ python manage.py shell
+Python 3.6.0 |Anaconda custom (x86_64)| (default, Dec 23 2016, 13:19:00) 
+Type "copyright", "credits" or "license" for more information.
+
+IPython 5.1.0 -- An enhanced Interactive Python.
+?         -> Introduction and overview of IPython's features.
+%quickref -> Quick reference.
+help      -> Python's own help system.
+object?   -> Details about 'object', use 'object??' for extra details.
+
+In [1]: from userchats.models import Chat
+
+In [2]: chats = Chat.objects.filter(users__in=[2])
+
+In [3]: chats
+Out[3]: <QuerySet []>
+
+In [4]: chats = Chat.objects.filter(users__id=[2])
+---------------------------------------------------------------------------
+TypeError                                 Traceback (most recent call last)
+<ipython-input-4-63d22bf935f5> in <module>()
+----> 1 chats = Chat.objects.filter(users__id=[2])
+
+/Users/tegaesabunor/anaconda/lib/python3.6/site-packages/django/db/models/manager.py in manager_method(self, *args, **kwargs)
+     83         def create_method(name, method):
+     84             def manager_method(self, *args, **kwargs):
+---> 85                 return getattr(self.get_queryset(), name)(*args, **kwargs)
+     86             manager_method.__name__ = method.__name__
+     87             manager_method.__doc__ = method.__doc__
+
+/Users/tegaesabunor/anaconda/lib/python3.6/site-packages/django/db/models/query.py in filter(self, *args, **kwargs)
+    782         set.
+    783         """
+--> 784         return self._filter_or_exclude(False, *args, **kwargs)
+    785 
+    786     def exclude(self, *args, **kwargs):
+
+/Users/tegaesabunor/anaconda/lib/python3.6/site-packages/django/db/models/query.py in _filter_or_exclude(self, negate, *args, **kwargs)
+    800             clone.query.add_q(~Q(*args, **kwargs))
+    801         else:
+--> 802             clone.query.add_q(Q(*args, **kwargs))
+    803         return clone
+    804 
+
+/Users/tegaesabunor/anaconda/lib/python3.6/site-packages/django/db/models/sql/query.py in add_q(self, q_object)
+   1259         existing_inner = set(
+   1260             (a for a in self.alias_map if self.alias_map[a].join_type == INNER))
+-> 1261         clause, _ = self._add_q(q_object, self.used_aliases)
+   1262         if clause:
+   1263             self.where.add(clause, AND)
+
+/Users/tegaesabunor/anaconda/lib/python3.6/site-packages/django/db/models/sql/query.py in _add_q(self, q_object, used_aliases, branch_negated, current_negated, allow_joins, split_subq)
+   1285                     child, can_reuse=used_aliases, branch_negated=branch_negated,
+   1286                     current_negated=current_negated, connector=connector,
+-> 1287                     allow_joins=allow_joins, split_subq=split_subq,
+   1288                 )
+   1289                 joinpromoter.add_votes(needed_inner)
+
+/Users/tegaesabunor/anaconda/lib/python3.6/site-packages/django/db/models/sql/query.py in build_filter(self, filter_expr, branch_negated, current_negated, can_reuse, connector, allow_joins, split_subq)
+   1219         else:
+   1220             col = targets[0].get_col(alias, field)
+-> 1221             condition = self.build_lookup(lookups, col, value)
+   1222             lookup_type = condition.lookup_name
+   1223 
+
+/Users/tegaesabunor/anaconda/lib/python3.6/site-packages/django/db/models/sql/query.py in build_lookup(self, lookups, lhs, rhs)
+   1113                     lhs = self.try_transform(lhs, name, lookups)
+   1114                     final_lookup = lhs.get_lookup('exact')
+-> 1115                 return final_lookup(lhs, rhs)
+   1116             lhs = self.try_transform(lhs, name, lookups)
+   1117             lookups = lookups[1:]
+
+/Users/tegaesabunor/anaconda/lib/python3.6/site-packages/django/db/models/lookups.py in __init__(self, lhs, rhs)
+     22     def __init__(self, lhs, rhs):
+     23         self.lhs, self.rhs = lhs, rhs
+---> 24         self.rhs = self.get_prep_lookup()
+     25         if hasattr(self.lhs, 'get_bilateral_transforms'):
+     26             bilateral_transforms = self.lhs.get_bilateral_transforms()
+
+/Users/tegaesabunor/anaconda/lib/python3.6/site-packages/django/db/models/lookups.py in get_prep_lookup(self)
+     72             return self.rhs._prepare(self.lhs.output_field)
+     73         if self.prepare_rhs and hasattr(self.lhs.output_field, 'get_prep_value'):
+---> 74             return self.lhs.output_field.get_prep_value(self.rhs)
+     75         return self.rhs
+     76 
+
+/Users/tegaesabunor/anaconda/lib/python3.6/site-packages/django/db/models/fields/__init__.py in get_prep_value(self, value)
+    964         if value is None:
+    965             return None
+--> 966         return int(value)
+    967 
+    968     def contribute_to_class(self, cls, name, **kwargs):
+
+TypeError: int() argument must be a string, a bytes-like object or a number, not 'list'
+
+In [5]: chats = Chat.objects.filter(users__id=2)
+
+In [6]: chats
+Out[6]: <QuerySet []>
+
+In [7]: chats.id
+---------------------------------------------------------------------------
+AttributeError                            Traceback (most recent call last)
+<ipython-input-7-e50713c4a39a> in <module>()
+----> 1 chats.id
+
+AttributeError: 'QuerySet' object has no attribute 'id'
+
+In [8]: len(chats)
+Out[8]: 0
+
+In [9]: chats = Chat.objects.all()
+
+In [10]: len(chats)
+Out[10]: 2
+
+In [11]: chats = Chat.objects.filter(users__id=1)
+
+In [12]: chats
+Out[12]: <QuerySet [<Chat: 2>]>
+
+In [13]: chats.users
+---------------------------------------------------------------------------
+AttributeError                            Traceback (most recent call last)
+<ipython-input-13-7a85336100b2> in <module>()
+----> 1 chats.users
+
+AttributeError: 'QuerySet' object has no attribute 'users'
+
+In [14]: chats.heartuser_set
+---------------------------------------------------------------------------
+AttributeError                            Traceback (most recent call last)
+<ipython-input-14-7fb47ec6b285> in <module>()
+----> 1 chats.heartuser_set
+
+AttributeError: 'QuerySet' object has no attribute 'heartuser_set'
+
+In [15]: len(chats)
+Out[15]: 1
+
+In [16]: from heartuser.models import HeartUser
+
+In [17]: u = HeartUser.objects.all()
+
+In [18]: u
+Out[18]: <QuerySet [<HeartUser: tegaesabunor>, <HeartUser: bithiah>]>
+
+In [19]: user = u[0]
+
+In [20]: user
+Out[20]: <HeartUser: tegaesabunor>
+
+In [21]: user.chat_set
+Out[21]: <django.db.models.fields.related_descriptors.create_forward_many_to_many_manager.<locals>.ManyRelatedManager at 0x111781940>
+
+In [22]: len(user.chat_set)
+---------------------------------------------------------------------------
+TypeError                                 Traceback (most recent call last)
+<ipython-input-22-0c53f2c1a4ae> in <module>()
+----> 1 len(user.chat_set)
+
+TypeError: object of type 'ManyRelatedManager' has no len()
+
+In [23]: user.chat_set.all()
+Out[23]: <QuerySet [<Chat: 2>]>
+
+In [24]: chat = user.chat_set_all()[0]
+---------------------------------------------------------------------------
+AttributeError                            Traceback (most recent call last)
+<ipython-input-24-fa704a87462b> in <module>()
+----> 1 chat = user.chat_set_all()[0]
+
+AttributeError: 'HeartUser' object has no attribute 'chat_set_all'
+
+In [25]: chat = user.chat_set.all()[0]
+
+In [26]: chat
+Out[26]: <Chat: 2>
+
+In [27]: chat.users
+Out[27]: <django.db.models.fields.related_descriptors.create_forward_many_to_many_manager.<locals>.ManyRelatedManager at 0x11178e710>
+
+In [28]: chat.users.all90
+---------------------------------------------------------------------------
+AttributeError                            Traceback (most recent call last)
+<ipython-input-28-9be029900870> in <module>()
+----> 1 chat.users.all90
+
+AttributeError: 'ManyRelatedManager' object has no attribute 'all90'
+
+In [29]: chat.users.all()
+Out[29]: <QuerySet [<HeartUser: tegaesabunor>]>
+
+In [30]: Chat.objects.all()
+Out[30]: <QuerySet [<Chat: 1>, <Chat: 2>]>
+
+In [31]: Chat.objects.all()[1].users.all()
+Out[31]: <QuerySet [<HeartUser: tegaesabunor>]>
+
+In [32]: Chat.objects.all()[1].users.all()
+Out[32]: <QuerySet [<HeartUser: tegaesabunor>, <HeartUser: bithiah>]>
+
+In [33]: chats = Chat.objects.filter(users__id=2)
+
+In [34]: len(chats)
+Out[34]: 1
+
+In [35]: chats
+Out[35]: <QuerySet [<Chat: 2>]>
+
+In [36]: chats[0].message
+---------------------------------------------------------------------------
+AttributeError                            Traceback (most recent call last)
+<ipython-input-36-d7efec493eee> in <module>()
+----> 1 chats[0].message
+
+AttributeError: 'Chat' object has no attribute 'message'
+
+In [37]: chats[0].chatline
+---------------------------------------------------------------------------
+AttributeError                            Traceback (most recent call last)
+<ipython-input-37-385f663b496d> in <module>()
+----> 1 chats[0].chatline
+
+AttributeError: 'Chat' object has no attribute 'chatline'
+
+In [38]: chats[0].chatline_set
+Out[38]: <django.db.models.fields.related_descriptors.create_reverse_many_to_one_manager.<locals>.RelatedManager at 0x1117a20f0>
+
+In [39]: chats[0].chatline_set.all()
+Out[39]: <QuerySet [<ChatLine: ChatLine object>]>
+
+In [40]: chats[0].chatline_set.all().message
+---------------------------------------------------------------------------
+AttributeError                            Traceback (most recent call last)
+<ipython-input-40-92739e563714> in <module>()
+----> 1 chats[0].chatline_set.all().message
+
+AttributeError: 'QuerySet' object has no attribute 'message'
+
+In [41]: chats[0].chatline_set.all()[0].message
+Out[41]: 'hi bithiah, hows it going'
+
+In [42]: chats.filter(id=2)
+---------------------------------------------------------------------------
+FieldError                                Traceback (most recent call last)
+<ipython-input-42-783ea8b34f28> in <module>()
+----> 1 chats.filter(id=2)
+
+/Users/tegaesabunor/anaconda/lib/python3.6/site-packages/django/db/models/query.py in filter(self, *args, **kwargs)
+    782         set.
+    783         """
+--> 784         return self._filter_or_exclude(False, *args, **kwargs)
+    785 
+    786     def exclude(self, *args, **kwargs):
+
+/Users/tegaesabunor/anaconda/lib/python3.6/site-packages/django/db/models/query.py in _filter_or_exclude(self, negate, *args, **kwargs)
+    800             clone.query.add_q(~Q(*args, **kwargs))
+    801         else:
+--> 802             clone.query.add_q(Q(*args, **kwargs))
+    803         return clone
+    804 
+
+/Users/tegaesabunor/anaconda/lib/python3.6/site-packages/django/db/models/sql/query.py in add_q(self, q_object)
+   1259         existing_inner = set(
+   1260             (a for a in self.alias_map if self.alias_map[a].join_type == INNER))
+-> 1261         clause, _ = self._add_q(q_object, self.used_aliases)
+   1262         if clause:
+   1263             self.where.add(clause, AND)
+
+/Users/tegaesabunor/anaconda/lib/python3.6/site-packages/django/db/models/sql/query.py in _add_q(self, q_object, used_aliases, branch_negated, current_negated, allow_joins, split_subq)
+   1285                     child, can_reuse=used_aliases, branch_negated=branch_negated,
+   1286                     current_negated=current_negated, connector=connector,
+-> 1287                     allow_joins=allow_joins, split_subq=split_subq,
+   1288                 )
+   1289                 joinpromoter.add_votes(needed_inner)
+
+/Users/tegaesabunor/anaconda/lib/python3.6/site-packages/django/db/models/sql/query.py in build_filter(self, filter_expr, branch_negated, current_negated, can_reuse, connector, allow_joins, split_subq)
+   1163         if not arg:
+   1164             raise FieldError("Cannot parse keyword query %r" % arg)
+-> 1165         lookups, parts, reffed_expression = self.solve_lookup_type(arg)
+   1166         if not allow_joins and len(parts) > 1:
+   1167             raise FieldError("Joined field references are not permitted in this query")
+
+/Users/tegaesabunor/anaconda/lib/python3.6/site-packages/django/db/models/sql/query.py in solve_lookup_type(self, lookup)
+   1043             if expression:
+   1044                 return expression_lookups, (), expression
+-> 1045         _, field, _, lookup_parts = self.names_to_path(lookup_splitted, self.get_meta())
+   1046         field_parts = lookup_splitted[0:len(lookup_splitted) - len(lookup_parts)]
+   1047         if len(lookup_parts) == 0:
+
+/Users/tegaesabunor/anaconda/lib/python3.6/site-packages/django/db/models/sql/query.py in names_to_path(self, names, opts, allow_many, fail_on_missing)
+   1361                     available = sorted(field_names + list(self.annotation_select))
+   1362                     raise FieldError("Cannot resolve keyword '%s' into field. "
+-> 1363                                      "Choices are: %s" % (name, ", ".join(available)))
+   1364                 break
+   1365             # Check if we need any joins for concrete inheritance cases (the
+
+FieldError: Cannot resolve keyword 'id' into field. Choices are: chat_id, chatline, users
+
+In [43]: chats.filter(chat_id=2)
+Out[43]: <QuerySet [<Chat: 2>]>
+
+In [44]: chats = Chat.objects.filter(users__in=[2])
+
+In [45]: chats
+Out[45]: <QuerySet [<Chat: 2>]>
+
+In [46]: chat = chats[0]
+
+In [47]: chat
+Out[47]: <Chat: 2>
+
+In [48]: chat.users
+Out[48]: <django.db.models.fields.related_descriptors.create_forward_many_to_many_manager.<locals>.ManyRelatedManager at 0x1117b40f0>
+
+In [49]: chat.users.all()
+Out[49]: <QuerySet [<HeartUser: tegaesabunor>, <HeartUser: bithiah>]>
+
+In [50]: chat.users.all().exclude(users 

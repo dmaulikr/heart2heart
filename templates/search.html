@@ -1,0 +1,157 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="{% static 'css/bootstrap.css' %}" rel="stylesheet">
+  <link rel="stylesheet" href="{% static 'default.css' %}">
+  <title>heart2heart_Search</title>
+</head>
+
+<body>
+  <!-- Navigation -->
+{% include "includes/nav.html" %}
+
+<div id="searchcontainer" class="center-block container">
+  <form class="form-horizontal">
+<fieldset>
+
+<!-- Form Name -->
+<legend>Look for potential matches</legend>
+
+<!-- Select Basic -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="selectbasic">Age</label>
+  <div class="col-md-4">
+    <select id="selectbasic" name="selectbasic" class="form-control">
+      <option value="">18-25</option>
+      <option value="">26-30</option>
+      <option value="">30-35</option>
+      <option value="">36-40</option>
+      <option value="">40+</option>
+    </select>
+  </div>
+</div>
+
+<!-- Select Basic -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="ethnicity">Ethnicity</label>
+  <div class="col-md-4">
+    <select id="ethnicity" name="ethnicity" class="form-control">
+      <option value="">White</option>
+      <option value="">Asian</option>
+      <option value="">Black</option>
+      <option value="">Hispanic/Latino</option>
+      <option value="">Middle Eastern</option>
+      <option value="">South Asian</option>
+      <option value="">Other</option>
+      <option value="">Mixed</option>
+    </select>
+  </div>
+</div>
+
+<!-- Select Basic -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="religion">Religion</label>
+  <div class="col-md-4">
+    <select id="religion" name="religion" class="form-control">
+      <option value="">Christianity</option>
+      <option value="">Islam</option>
+      <option value="">Judaism</option>
+      <option value="">Buddhism</option>
+      <option value="">Taoism</option>
+      <option value="">Hinduism</option>
+      <option value="">Sikhism</option>
+      <option value="">Jainism</option>
+      <option value="">Atheist/none</option>
+      <option value="">Agnostic</option>
+      <option value="">Other</option>
+    </select>
+  </div>
+</div>
+
+<!-- Select Basic -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="location">Location</label>
+  <div class="col-md-4">
+    <select id="location" name="location" class="form-control">
+      <option value="">Near me</option>
+      <option value="">Anywhere</option>
+    </select>
+  </div>
+</div>
+
+<!-- Select Basic -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="pets">Pets</label>
+  <div class="col-md-4">
+    <select id="pets" name="pets" class="form-control">
+      <option value="">Has them and doesn't want more</option>
+      <option value="">Has them and wants more</option>
+      <option value="">Doesn't have them and wants them</option>
+      <option value="">Doesn't have them and doesn't want any</option>
+      <option value="">Ambivalent</option>
+    </select>
+  </div>
+</div>
+
+<!-- Select Basic -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="kids">Kids</label>
+  <div class="col-md-4">
+    <select id="kids" name="kids" class="form-control">
+      <option value="">Has them and doesn't want more</option>
+      <option value="">Has them and wants more</option>
+      <option value="">Doesn't have them and wants them</option>
+      <option value="">Childfree</option>
+    </select>
+  </div>
+</div>
+
+<!-- Select Basic -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="relocate">Willing to relocate?</label>
+  <div class="col-md-4">
+    <select id="relocate" name="relocate" class="form-control">
+      <option value="">Yes</option>
+      <option value="">No</option>
+      <option value="">Maybe</option>
+    </select>
+  </div>
+</div>
+
+<!-- Select Basic -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="travel">Willing to travel?</label>
+  <div class="col-md-4">
+    <select id="travel" name="travel" class="form-control">
+      <option value="">Yes</option>
+      <option value="">No</option>
+      <option value="">Maybe</option>
+    </select>
+  </div>
+</div>
+
+<!-- Select Basic -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="distance">Open to long distance relationship?</label>
+  <div class="col-md-4">
+    <select id="distance" name="distance" class="form-control">
+      <option value="">Yes</option>
+      <option value="">No</option>
+      <option value="">Maybe</option>
+    </select>
+  </div>
+</div>
+
+</fieldset>
+<a href="#"><button class="btn btn-default center-block">Go!</button></a>
+</form>
+
+
+</div>
+
+</body>
+</html>
