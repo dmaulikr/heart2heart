@@ -1,0 +1,7 @@
+.py[cod]
+local.py
+db.sqlite3
+*.pyc
+dump.rdb
+base.py
+__pycache__
