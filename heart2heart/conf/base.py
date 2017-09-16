@@ -25,7 +25,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY', '=1bt&ec&d*k13(p&me-b-6yfcfyov8_=')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['0.0.0.0', '192.168.20.5','192.168.20.11', 'heart-2-heart.herokuapp.com']
+ALLOWED_HOSTS = ['0.0.0.0', '192.168.20.5','192.168.20.11', 'heart-2-heart.herokuapp.com', '127.0.0.1']
 
 
 # Application definition
@@ -54,6 +54,9 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    # required middleware for django cache framework
+    'django.middleware.cache.UpdateCacheMiddleware',
+    'django.middleware.cache.FetchFromCacheMiddleware',
 ]
 
 ROOT_URLCONF = 'heart2heart.urls'
@@ -112,7 +115,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'Australia/Perth'
 
 USE_I18N = True
 
@@ -161,3 +164,13 @@ EMAIL_HOST_USER = "tesabunor@gmail.com"
 EMAIL_HOST_PASSWORD = '1739t3gA'
 EMAIL_PORT = 587
 
+#Django cache framework settings
+CACHES = {
+    'default': {
+        'BACKEND': 'django.core.cache.backends.filebased.FileBasedCache',
+        'LOCATION': '/var/tmp/django_cache',
+    }
+}
+CACHE_MIDDLEWARE_ALIAS = 'default'
+CACHE_MIDDLEWARE_SECONDS = 600
+CACHE_MIDDLEWARE_KEY_PREFIX = ''
